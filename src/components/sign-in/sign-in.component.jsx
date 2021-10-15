@@ -47,6 +47,7 @@ class SignIn extends React.Component {
             handleChange={this.handleChange}
             value={this.state.email}
             label="email"
+            autoComplete="username"
             required
           />
 
@@ -56,6 +57,7 @@ class SignIn extends React.Component {
             value={this.state.password}
             handleChange={this.handleChange}
             label="password"
+            autoComplete="current-password"
             required
           />
           <div className="buttons">
