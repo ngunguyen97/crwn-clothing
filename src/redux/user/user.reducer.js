@@ -1,7 +1,8 @@
-import { UserActionTypes } from "./user.types";
+import { UserActionTypes } from './user.types';
 
 const INITIAL_STATE = {
   currentUser: null,
+  isFetching: true,
 };
 
 const userReducer = (state = INITIAL_STATE, action) => {
@@ -10,6 +11,7 @@ const userReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         currentUser: action.payload,
+        isFetching: false,
       };
     default:
       return state;
