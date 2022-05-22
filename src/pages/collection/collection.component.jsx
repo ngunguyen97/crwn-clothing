@@ -2,12 +2,15 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import CollectionItem from '../../components/collection-item/collection-item.component';
+import NotFoundPage from '../not-found/not-found.component';
 
 import { selectCollection } from '../../redux/shop/shop.selectors';
 
 import './collection.styles.scss';
 
 const CollectionPage = ({ collection }) => {
+  if (!collection) return <NotFoundPage />;
+
   const { title, items } = collection;
   return (
     <div className="collection-page">
