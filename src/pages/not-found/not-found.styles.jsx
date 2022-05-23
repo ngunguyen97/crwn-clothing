@@ -23,7 +23,7 @@ export const ErrorCode = styled.div`
       radial-gradient(closest-side at 50% 50%, #e91e6e 100%, rgba(0, 0, 0, 0));
     background-repeat: repeat-x;
     background-size: 40vmin 40vmin;
-    background-position: -100vmin 20vmin, 100vmin -25vmin;
+    background-position: -100vmin 27vmin, 100vmin -25vmin;
     width: 100%;
     height: 100%;
     mix-blend-mode: screen;
@@ -33,7 +33,7 @@ export const ErrorCode = styled.div`
 
     @keyframes moving {
       to {
-        background-position: 100vmin 200vmin, -100vmin -25vmin;
+        background-position: 100vmin 27vmin, -100vmin -25vmin;
       }
     }
   }
